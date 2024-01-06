@@ -8,7 +8,7 @@ st.set_page_config(
 )
 page = st.sidebar.radio('Select Page',['Dataset Overview','Descriptive Statistics','Charts'])
 if page=='Dataset Overview':
-    st.write('<h1 style="text-align: center; color: GoldenRod;">Tips DashBoard</h1>',unsafe_allow_html=True)
+    st.write('<h1 style="text-align: center; color: blue;">Tips DashBoard</h1>',unsafe_allow_html=True)
     space1,col,space2=st.columns([2,4,2])
     col.dataframe(df,width=600, height=700)
 elif page=='Descriptive Statistics':
